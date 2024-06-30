@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { justifySchema, spaceSchema } from "./utils/spaceSchema";
 
-interface InlineBundleProps {
+export interface InlineBundleProps {
   gutter?: keyof typeof spaceSchema;
   justify?: keyof typeof justifySchema;
   align?: keyof typeof justifySchema;
