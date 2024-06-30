@@ -1,10 +1,23 @@
 import { Center } from "./Center";
+import { Cover } from "./Cover";
 import { InlineBundle } from "./InlineBundle";
 import { Layers } from "./Layers";
 import { MediaWrapper } from "./MediaWrapper";
 import { Pad } from "./Pad";
 import { Columns, Column } from "./ResponsiveGrid";
 import { Split } from "./Split";
+
+const Top = () => (
+  <div>
+    <h1>Top</h1>
+  </div>
+);
+
+const Bottom = () => (
+  <div>
+    <h4>Bottom</h4>
+  </div>
+);
 
 function App() {
   return (
@@ -100,6 +113,15 @@ function App() {
           </MediaWrapper>
         </div>
       </Layers>
+      <div>
+        <hr />
+        <h2>Cover component pattern</h2>
+        <Cover top={<Top />} bottom={<Bottom />} as={Pad} padding="lg">
+          <div>
+            This is the content of the cover component. It can be anything you
+          </div>
+        </Cover>
+      </div>
     </Pad>
   );
 }
