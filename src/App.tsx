@@ -1,5 +1,6 @@
 import { Layer } from "./Layer";
 import { Columns, Column } from "./ResponsiveGrid";
+import { Split } from "./Split";
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
       <div>
         <hr />
         <h2>Layer</h2>
-        <Layer>
-          <h1>Title</h1>
+        <Split fraction="2/3">
           <Layer gutter="xs">
+            <h1>Title</h1>
             <h3>Subtitle</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
@@ -41,7 +42,7 @@ function App() {
 
             <button>submit form</button>
           </Layer>
-        </Layer>
+        </Split>
       </div>
     </Layer>
   );
