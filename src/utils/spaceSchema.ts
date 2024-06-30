@@ -16,6 +16,14 @@ export const fractionSchema = {
   "auto-end": "1fr auto",
 };
 
+export const justifySchema = {
+  start: "flex-start",
+  end: "flex-end",
+  center: "center",
+  between: "space-between",
+  around: "space-around",
+};
+
 export const breakpoints = {
   desktop: "1024px",
   tablet: "768px",
