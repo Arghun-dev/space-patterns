@@ -1,5 +1,6 @@
 import { InlineBundle } from "./InlineBundle";
 import { Layer } from "./Layer";
+import { Pad } from "./Pad";
 import { Columns, Column } from "./ResponsiveGrid";
 import { Split } from "./Split";
 
@@ -47,13 +48,15 @@ function App() {
       </div>
       <div>
         <hr />
-        <h2>Inline Bundle</h2>
-        <InlineBundle justify="end" align="start" gutter="xl">
-          <div>Menu1</div>
-          <div>Menu2</div>
-          <div>Menu3</div>
-          <div>Menu 4</div>
-        </InlineBundle>
+        <Pad style={{ backgroundColor: "red" }} padding={["lg", "xs"]}>
+          <h2>Inline Bundle</h2>
+          <InlineBundle justify="end" align="start" gutter="xl">
+            <div>Menu1</div>
+            <div>Menu2</div>
+            <div>Menu3</div>
+            <div>Menu 4</div>
+          </InlineBundle>
+        </Pad>
       </div>
     </Layer>
   );
